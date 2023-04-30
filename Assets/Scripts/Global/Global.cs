@@ -28,7 +28,8 @@ public static class Global
         saveData = new SaveData();
 
         for (int i = 0; i < resources.heads.Length; i++) {
-            resources.heads[i].type = Type.Head;
+            //TODO
+            //resources.heads[i].type = Type.Head;
         }
     }
 

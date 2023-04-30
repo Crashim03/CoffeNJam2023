@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BodyPart : MonoBehaviour
 {
-    public Image image;
+    public Sprite sprite;
     public Type type;
     public bool isUnlocked;
     public int id;
