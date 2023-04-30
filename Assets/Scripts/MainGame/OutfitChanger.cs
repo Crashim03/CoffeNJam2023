@@ -9,9 +9,11 @@ public class OutfitChanger : MonoBehaviour
     [SerializeField] private Image bodyPart;
 
     [Header("Sprite List")]
-    [SerializeField] private List<Sprite> options = new List<Sprite>();
+    public List<BodyPart> options = new List<BodyPart>();
 
     private int currentOption = 0;
+
+    
 
     public void NextOption()
     {
@@ -21,7 +23,7 @@ public class OutfitChanger : MonoBehaviour
             currentOption = 0;
         }
 
-        bodyPart.sprite = options[currentOption];
+        bodyPart.sprite = options[currentOption].sprite;
     }
 
     public void PrevOption()
@@ -32,6 +34,6 @@ public class OutfitChanger : MonoBehaviour
             currentOption = options.Count - 1;
         }
 
-        bodyPart.sprite = options[currentOption];
+        bodyPart.sprite = options[currentOption].sprite;
     }
 }
