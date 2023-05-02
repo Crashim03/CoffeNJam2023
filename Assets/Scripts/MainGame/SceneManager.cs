@@ -17,6 +17,10 @@ public class SceneManager : MonoBehaviour
         {
             menus[(int)Global.allBodyParts[i].type].GetComponent<OutfitChanger>().options.Add(Global.allBodyParts[i]);
         }
+        for (int i = 0; i < menus.Count; i++)
+        {
+            menus[i].SetActive(true);
+        }
     }
 
 }

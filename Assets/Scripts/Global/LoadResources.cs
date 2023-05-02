@@ -6,11 +6,21 @@ using System.IO;
 
 public class LoadResources : MonoBehaviour
 {
-    public Sprite[] heads = Resources.LoadAll<Sprite>("Heads");
-    public Sprite[] rightArms = Resources.LoadAll<Sprite>("RightArms");
-    public Sprite[] leftArms = Resources.LoadAll<Sprite>("LeftArms");
-    public Sprite[] rightLegs = Resources.LoadAll<Sprite>("RightLegs");
-    public Sprite[] leftLegs = Resources.LoadAll<Sprite>("LeftLegs");
-    public Sprite[] torsos = Resources.LoadAll<Sprite>("Torsos");
-    public OutfitData[] specialOutfits = Resources.LoadAll<OutfitData>("SpecialOutfits");
+    public Sprite[] heads;
+    public Sprite[] rightArms;
+    public Sprite[] leftArms;
+    public Sprite[] rightLegs;
+    public Sprite[] leftLegs;
+    public Sprite[] torsos;
+    public OutfitData[] specialOutfits;
+    private void Awake()
+    {
+        heads = Resources.LoadAll<Sprite>("Heads");
+        rightArms = Resources.LoadAll<Sprite>("RightArms");
+        leftArms = Resources.LoadAll<Sprite>("LeftArms");
+        rightLegs = Resources.LoadAll<Sprite>("RightLegs");
+        leftLegs = Resources.LoadAll<Sprite>("LeftLegs");
+        torsos = Resources.LoadAll<Sprite>("Torsos");
+        specialOutfits = Resources.LoadAll<OutfitData>("SpecialOutfits");
+    }
 }

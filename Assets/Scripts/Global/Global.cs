@@ -24,7 +24,8 @@ public static class Global
     {
         if (isInitialized) return;
         isInitialized = true;
-        resources = new LoadResources();
+        GameObject gameObject = new GameObject("LoadResources");
+        resources = gameObject.AddComponent<LoadResources>();
         saveData = new SaveData();
 
         for (int i = 0; i < resources.heads.Length; i++) {
