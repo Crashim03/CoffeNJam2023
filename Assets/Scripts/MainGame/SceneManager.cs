@@ -12,6 +12,7 @@ public class SceneManager : MonoBehaviour
 
     private void Awake() 
     {
+        Global.Initialize();
         for (int i = 0; i < Global.allBodyParts.Count; i++)
         {
             menus[(int)Global.allBodyParts[i].type].GetComponent<OutfitChanger>().options.Add(Global.allBodyParts[i]);
