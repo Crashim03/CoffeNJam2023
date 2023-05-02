@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class OutfitChanger : MonoBehaviour
 {
     [Header("Sprite Renderer")]
-    [SerializeField] private Image bodyPart;
+    public Image bodyPart;
 
     [Header("Sprite List")]
-    public List<BodyPart> options = new List<BodyPart>();
+    public List<BodyPart> options;
 
-    private int currentOption = 0;
+    public int currentOption = 0;
 
-    private void Awake() {
+    public void Initialize()
+    {
+        Debug.Log(options[currentOption].sprite);
         bodyPart.sprite = options[currentOption].sprite;
     }
 

@@ -51,6 +51,11 @@ public static class Global
         for (int i = 0; i < resources.torsos.Length; i++) {
             allBodyParts.Add(new BodyPart(resources.torsos[i], Type.Torso, i));
         }
+
+        // for (int i = 0; i < allBodyParts.Count; i++) {
+        //     Debug.Log(allBodyParts.Count);
+        //     Debug.Log(allBodyParts[i].sprite);
+        // }
     }
 
     public static void Save() {

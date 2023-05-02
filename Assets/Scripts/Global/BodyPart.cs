@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BodyPart : MonoBehaviour
+public class BodyPart
 {
     public Sprite sprite;
     public Type type;

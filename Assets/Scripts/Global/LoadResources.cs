@@ -16,11 +16,11 @@ public class LoadResources : MonoBehaviour
     private void Awake()
     {
         heads = Resources.LoadAll<Sprite>("Heads");
-        rightArms = Resources.LoadAll<Sprite>("RightArms");
-        leftArms = Resources.LoadAll<Sprite>("LeftArms");
-        rightLegs = Resources.LoadAll<Sprite>("RightLegs");
-        leftLegs = Resources.LoadAll<Sprite>("LeftLegs");
+        rightArms = Resources.LoadAll<Sprite>("Right Arms");
+        leftArms = Resources.LoadAll<Sprite>("Left Arms");
+        rightLegs = Resources.LoadAll<Sprite>("Right Legs");
+        leftLegs = Resources.LoadAll<Sprite>("Left Legs");
         torsos = Resources.LoadAll<Sprite>("Torsos");
-        specialOutfits = Resources.LoadAll<OutfitData>("SpecialOutfits");
+        specialOutfits = Resources.LoadAll<OutfitData>("Special Outfits");
     }
 }
