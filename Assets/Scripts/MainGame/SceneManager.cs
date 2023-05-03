@@ -26,4 +26,16 @@ public class SceneManager : MonoBehaviour
         }
     }
 
+    public void SaveButton() {
+        Global.Save();
+    }
+
+    public void LoadButton() {
+        Global.Load();
+    }
+
+    public void CreateButon() {
+        //Global.AddOutfit();
+        Global.Save();
+    }
 }

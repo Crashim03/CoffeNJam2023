@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Outfit : MonoBehaviour
+[CreateAssetMenu(fileName = "Outfit", menuName = "Outfit")]
+public class Outfit : ScriptableObject
 {
     public BodyPart head;
     public BodyPart rightArm;
@@ -11,5 +12,6 @@ public class Outfit : MonoBehaviour
     public BodyPart leftLeg;
     public BodyPart torso;
     public string outfitName;
+    public string date;
     public int id;
 }

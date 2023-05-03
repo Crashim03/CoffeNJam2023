@@ -15,6 +15,6 @@ public class BodyPart
         this.sprite = sprite;
         this.type = type;
         this.id = id;
-        this.isUnlocked = false;
+        this.isUnlocked = true;
     }
 }

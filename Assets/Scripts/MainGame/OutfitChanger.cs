@@ -11,33 +11,59 @@ public class OutfitChanger : MonoBehaviour
     [Header("Sprite List")]
     public List<BodyPart> options;
 
-    public int currentOption = 0;
+    [Header("Body Part")]
+    public BodyPart currentPart;
+    private int currentOption = 0;
 
     public void Initialize()
     {
         Debug.Log(options[currentOption].sprite);
-        bodyPart.sprite = options[currentOption].sprite;
+        currentPart = options[currentOption];
+        bodyPart.sprite = currentPart.sprite;
     }
 
     public void NextOption()
     {
-        currentOption++;
+        currentOption++;  
+
         if (currentOption >= options.Count)
         {
             currentOption = 0;
         }
 
-        bodyPart.sprite = options[currentOption].sprite;
+        while(!options[currentOption].isUnlocked)
+        {
+            currentOption++;
+            if (currentOption >= options.Count)
+            {
+                currentOption = 0;
+            }
+        }
+
+
+        currentPart = options[currentOption];
+        bodyPart.sprite = currentPart.sprite;
     }
 
     public void PrevOption()
     {
         currentOption--;
-        if (currentOption < 0)
+                if (currentOption < 0)
         {
             currentOption = options.Count - 1;
         }
+        
+        while(!options[currentOption].isUnlocked)
+        {
+            currentOption--;
+            if (currentOption < 0)
+            {
+                currentOption = options.Count - 1;
+            }
+        }
 
-        bodyPart.sprite = options[currentOption].sprite;
+
+        currentPart = options[currentOption];
+        bodyPart.sprite = currentPart.sprite;
     }
 }
