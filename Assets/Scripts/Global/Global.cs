@@ -102,23 +102,20 @@ public static class Global
             outfit.name = saveData.outfits[i].outfitName;
             outfit.date = saveData.outfits[i].date;
             outfit.id = saveData.outfits[i].id;
-            outfit.head = allBodyParts[saveData.outfits[i].head];
-            outfit.rightArm = allBodyParts[saveData.outfits[i].rightArm];
-            outfit.leftArm = allBodyParts[saveData.outfits[i].leftArm];
-            outfit.rightLeg = allBodyParts[saveData.outfits[i].rightLeg];
-            outfit.leftLeg = allBodyParts[saveData.outfits[i].leftLeg];
-            outfit.torso = allBodyParts[saveData.outfits[i].torso];
+            for (int j = 0; j < saveData.outfits[i].bodyParts.Count; j++)
+                outfit.bodyParts.Add(allBodyParts[saveData.outfits[i].bodyParts[j]]);
 
             allOutfits.Add(outfit);
         }
     }
 
-    public static void AddOutifit()
-    {
-        
+    public static void Reset() {
+        File.Delete(path);
+        Initialize();
     }
 
-    public static void Reset() {
-
+    public static void AddOutfit()
+    {
+        Outfit outfit = new Outfit();
     }
 }
