@@ -35,7 +35,16 @@ public class SceneManager : MonoBehaviour
     }
 
     public void CreateButon() {
-        //Global.AddOutfit();
+        List<BodyPart> bps;
+        for (int i = 0; i < menus.Count; i++)
+        {
+            bps.append(menus[i].bodyPart);
+        }
+        Global.CreateOutfit();
         Global.Save();
+    }
+
+    public void RandomButton() {
+        
     }
 }
