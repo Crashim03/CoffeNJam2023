@@ -54,7 +54,7 @@ public class Manager : MonoBehaviour
             menus[i].GetComponent<OutfitChanger>().Randomize();
     }
 
-    public void GalleryButton() {
-        SceneManager.LoadScene(1);
+    public void ReturnButton() {
+        SceneManager.LoadScene("Gallery");
     }
 }
