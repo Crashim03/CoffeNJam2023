@@ -55,9 +55,11 @@ public static class Global
             allBodyParts.Add(new BodyPart(resources.torsos[i], Type.Torso, partCounter++));
         }
 
-        for (int i = 0; i < resources.specialOutfits.Length; i++) {
-            specialOutfits.Add(resources.specialOutfits[i]);
-        }
+        createSpecialOutfits();
+    }
+
+    public static void createSpecialOutfits() {
+        //TODO: Create special outfits
     }
 
     public static void Save() {
@@ -92,7 +94,6 @@ public static class Global
 
         for (int i = 0; i < saveData.bodyParts.Length; i++) {
 
-            allBodyParts[i].type = saveData.bodyParts[i].type;
             allBodyParts[i].isUnlocked = saveData.bodyParts[i].isUnlocked;
             allBodyParts[i].id = saveData.bodyParts[i].id;
         }
@@ -114,8 +115,12 @@ public static class Global
         Initialize();
     }
 
-    public static void AddOutfit()
+    public static void CreateOutfit(BodyPart[] bodyParts, string name)
     {
         Outfit outfit = new Outfit();
+        outfit.name = name;
+        outfit.date = System.DateTime.Now.ToString();
+        outfit.id = allOutfits.Count;
+        outfit.bodyParts.AddRange(bodyParts);
     }
 }

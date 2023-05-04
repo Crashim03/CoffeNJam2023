@@ -12,7 +12,6 @@ public class LoadResources : MonoBehaviour
     public Sprite[] rightLegs;
     public Sprite[] leftLegs;
     public Sprite[] torsos;
-    public Outfit[] specialOutfits;
     private void Awake()
     {
         heads = Resources.LoadAll<Sprite>("Heads");
@@ -21,6 +20,5 @@ public class LoadResources : MonoBehaviour
         rightLegs = Resources.LoadAll<Sprite>("Right Legs");
         leftLegs = Resources.LoadAll<Sprite>("Left Legs");
         torsos = Resources.LoadAll<Sprite>("Torsos");
-        specialOutfits = Resources.LoadAll<Outfit>("Special Outfits");
     }
 }
