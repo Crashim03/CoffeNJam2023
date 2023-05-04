@@ -41,8 +41,9 @@ public class Manager : MonoBehaviour
         {
             bps.Add(menus[i].GetComponent<OutfitChanger>().currentPart);
         }
-        Global.CreateOutfit(bps, "BananaMan");
+        int id = Global.CreateOutfit(bps, "BananaMan");
         Global.Save();
+        Global.Load(id);
     }
 
     public void ResetButton() {
