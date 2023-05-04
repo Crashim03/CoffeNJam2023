@@ -20,6 +20,7 @@ public class OutfitChanger : MonoBehaviour
         Debug.Log(options[currentOption].sprite);
         currentPart = options[currentOption];
         bodyPart.sprite = currentPart.sprite;
+        bodyPart.SetNativeSize();
     }
 
     public void NextOption()
@@ -43,6 +44,7 @@ public class OutfitChanger : MonoBehaviour
 
         currentPart = options[currentOption];
         bodyPart.sprite = currentPart.sprite;
+        bodyPart.SetNativeSize();
     }
 
     public void PrevOption()
@@ -65,6 +67,7 @@ public class OutfitChanger : MonoBehaviour
 
         currentPart = options[currentOption];
         bodyPart.sprite = currentPart.sprite;
+        bodyPart.SetNativeSize();
     }
 
     public void Randomize() {
@@ -75,5 +78,6 @@ public class OutfitChanger : MonoBehaviour
         }
         currentPart = options[currentOption];
         bodyPart.sprite = currentPart.sprite;
+        bodyPart.SetNativeSize();
     }
 }
