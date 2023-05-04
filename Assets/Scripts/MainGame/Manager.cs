@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
-public class SceneManager : MonoBehaviour
+public class Manager : MonoBehaviour
 {
 
     public List<GameObject> menus;
@@ -51,5 +52,9 @@ public class SceneManager : MonoBehaviour
     public void RandomButton() {
         for (int i = 0; i < menus.Count; i++)
             menus[i].GetComponent<OutfitChanger>().Randomize();
+    }
+
+    public void GalleryButton() {
+        SceneManager.LoadScene(1);
     }
 }
