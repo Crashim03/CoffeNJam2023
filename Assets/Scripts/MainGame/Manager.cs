@@ -43,8 +43,9 @@ public class Manager : MonoBehaviour
         {
             bps.Add(menus[i].GetComponent<OutfitChanger>().currentPart);
         }
-        Global.CreateOutfit(bps, outfitName.GetComponent<TMP_InputField>().text);
+        int id = Global.CreateOutfit(bps, outfitName.GetComponent<TMP_InputField>().text);
         Global.Save();
+        Global.LoadOutfit(id);
     }
 
     public void ResetButton() {

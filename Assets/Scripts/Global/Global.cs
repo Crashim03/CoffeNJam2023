@@ -21,6 +21,7 @@ public static class Global
     public static LoadResources resources;
     public static SaveData saveData;
     public static bool isInitialized = false;
+    public static Outfit currentOutfit;
 
     public static void Initialize()
     {
@@ -115,7 +116,7 @@ public static class Global
         Initialize();
     }
 
-    public static void CreateOutfit(List<BodyPart> bodyParts, string name)
+    public static int CreateOutfit(List<BodyPart> bodyParts, string name)
     {
         Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
         outfit.outfitName = name;
@@ -123,5 +124,11 @@ public static class Global
         outfit.id = allOutfits.Count;
         outfit.bodyParts.AddRange(bodyParts);
         allOutfits.Add(outfit);
+        return outfit.id;
+    }
+
+    public static void LoadOutfit(int id)
+    {
+        currentOutfit = allOutfits[id];
     }
 }
