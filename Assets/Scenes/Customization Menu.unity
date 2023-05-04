@@ -719,7 +719,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 755633570}
         m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
-        m_MethodName: RandomButton
+        m_MethodName: ResetButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
