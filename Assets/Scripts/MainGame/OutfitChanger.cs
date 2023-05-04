@@ -13,7 +13,7 @@ public class OutfitChanger : MonoBehaviour
 
     [Header("Body Part")]
     public BodyPart currentPart;
-    private int currentOption = 0;
+    public int currentOption = 0;
 
     public void Initialize()
     {
@@ -63,6 +63,16 @@ public class OutfitChanger : MonoBehaviour
         }
 
 
+        currentPart = options[currentOption];
+        bodyPart.sprite = currentPart.sprite;
+    }
+
+    public void Randomize() {
+        currentOption = Random.Range(0, options.Count);
+        while(!options[currentOption].isUnlocked)
+        {
+            currentOption = Random.Range(0, options.Count);
+        }
         currentPart = options[currentOption];
         bodyPart.sprite = currentPart.sprite;
     }

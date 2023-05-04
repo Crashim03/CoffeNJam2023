@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BodyPart : ScriptableObject
+public class BodyPart
 {
     public Sprite sprite;
     public Type type;

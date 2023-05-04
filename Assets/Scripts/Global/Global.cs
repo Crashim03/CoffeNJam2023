@@ -99,7 +99,7 @@ public static class Global
         }
 
         for (int i = 0; i < saveData.outfits.Length; i++) {
-            Outfit outfit = new Outfit();
+            Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
             outfit.name = saveData.outfits[i].outfitName;
             outfit.date = saveData.outfits[i].date;
             outfit.id = saveData.outfits[i].id;
@@ -115,12 +115,13 @@ public static class Global
         Initialize();
     }
 
-    public static void CreateOutfit(BodyPart[] bodyParts, string name)
+    public static void CreateOutfit(List<BodyPart> bodyParts, string name)
     {
-        Outfit outfit = new Outfit();
+        Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
         outfit.name = name;
         outfit.date = System.DateTime.Now.ToString();
         outfit.id = allOutfits.Count;
         outfit.bodyParts.AddRange(bodyParts);
+        allOutfits.Add(outfit);
     }
 }
