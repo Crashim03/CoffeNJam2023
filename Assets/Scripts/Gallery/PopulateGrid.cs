@@ -19,7 +19,8 @@ public class PopulateGrid : MonoBehaviour
         for (int i = 0; i < Global.allOutfits.Count; i++)
         {
             newObj = (GameObject)Instantiate(prefab, transform);
-            newObj.GetComponent<Preview>().changeName(Global.allOutfits[i].name);
+            Debug.Log(Global.allOutfits[i].outfitName);
+            newObj.GetComponent<Preview>().changeName(Global.allOutfits[i].outfitName);
         }
     }
 

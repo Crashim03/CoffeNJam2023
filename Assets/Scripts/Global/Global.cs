@@ -118,7 +118,7 @@ public static class Global
     public static void CreateOutfit(List<BodyPart> bodyParts, string name)
     {
         Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
-        outfit.name = name;
+        outfit.outfitName = name;
         outfit.date = System.DateTime.Now.ToString();
         outfit.id = allOutfits.Count;
         outfit.bodyParts.AddRange(bodyParts);
