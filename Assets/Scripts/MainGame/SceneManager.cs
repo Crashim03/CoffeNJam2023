@@ -26,4 +26,30 @@ public class SceneManager : MonoBehaviour
         }
     }
 
+    public void SaveButton() {
+        Global.Save();
+    }
+
+    public void LoadButton() {
+        Global.Load();
+    }
+
+    public void CreateButon() {
+        List<BodyPart> bps = new List<BodyPart>();
+        for (int i = 0; i < menus.Count; i++)
+        {
+            bps.Add(menus[i].GetComponent<OutfitChanger>().currentPart);
+        }
+        Global.CreateOutfit(bps, (string)"BananaMan");
+        Global.Save();
+    }
+
+    public void ResetButton() {
+        Global.Reset();
+    }
+
+    public void RandomButton() {
+        for (int i = 0; i < menus.Count; i++)
+            menus[i].GetComponent<OutfitChanger>().Randomize();
+    }
 }

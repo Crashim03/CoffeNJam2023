@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-[CreateAssetMenu(fileName = "OutfitData", menuName = "CoffeNJam2023/OutfitData", order = 0)]
-public class OutfitData : ScriptableObject
+public class OutfitData
 {
-    public BodyPartData head;
-    public BodyPartData rightArm;
-    public BodyPartData leftArm;
-    public BodyPartData rightLeg;
-    public BodyPartData leftLeg;
-    public BodyPartData torso;
+    public List<int> bodyParts = new List<int>();
     public string outfitName;
     public string date;
     public int id;
+
+    public OutfitData(Outfit outfit)
+    {
+        for (int i = 0; i < outfit.bodyParts.Count; i++)
+        {
+            this.bodyParts.Add(outfit.bodyParts[i].id);
+        }
+        this.outfitName = outfit.outfitName;
+        this.date = outfit.date;
+        this.id = outfit.id;
+    }
 }
