@@ -43,7 +43,7 @@ public class Manager : MonoBehaviour
         }
         int id = Global.CreateOutfit(bps, "BananaMan");
         Global.Save();
-        Global.Load(id);
+        Global.LoadOutfit(id);
     }
 
     public void ResetButton() {
