@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 137555e39c97fe14296113e43ee9077f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Young Frankenstein Rotalic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 83da2f2d576a0f84c9ebf6a4ccbc6091, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
