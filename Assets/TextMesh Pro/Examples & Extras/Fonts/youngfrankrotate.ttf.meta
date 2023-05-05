@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ec2f8e616ba29c34aa331d86fb02348e
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Young Frankenstein Rotated
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4b6e8dcdd0e3b8e49bd74a6aded5b6e0, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: ebd344cd6314ca041911fd584fcb0f36
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Young Frankenstein Italic
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: ea998361f8d9bde42bf99153403c8c5c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
