@@ -100,28 +100,6 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 2152
-      y: 4
-      width: 739
-      height: 783
-    spriteID: 79bcbe55ae6d9c247831f5491c450666
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 2152, y: 4}
-    spritePosition: {x: 1305, y: 3592}
-  - name: Imagem Inserida
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
       x: 4
       y: 4
       width: 819
@@ -233,7 +211,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 2152
-      y: 795
+      y: 4
       width: 719
       height: 786
     spriteID: 8db03366e2877e441ae8e8ca6301cf65
@@ -245,7 +223,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 2152, y: 795}
+    uvTransform: {x: 2152, y: 4}
     spritePosition: {x: 1268, y: 3578}
   characterData:
     bones: []
@@ -287,12 +265,12 @@ ScriptedImporter:
     flatten: 0
     isImported: 0
     isVisible: 1
-  - name: Imagem Inserida
-    spriteName: Imagem Inserida
+  - name: Camada 8
+    spriteName: Camada 8
     isGroup: 0
     parentIndex: 0
-    spriteID: 79bcbe55ae6d9c247831f5491c450666
-    layerID: 25
+    spriteID: 8db03366e2877e441ae8e8ca6301cf65
+    layerID: 2
     mosaicPosition: {x: 2152, y: 4}
     flatten: 0
     isImported: 1
@@ -394,16 +372,6 @@ ScriptedImporter:
     spriteID: 2e12f33d25b607c408f12afcafed2529
     layerID: 5
     mosaicPosition: {x: 488, y: 1614}
-    flatten: 0
-    isImported: 1
-    isVisible: 1
-  - name: Camada 8
-    spriteName: Camada 8
-    isGroup: 0
-    parentIndex: -1
-    spriteID: 8db03366e2877e441ae8e8ca6301cf65
-    layerID: 2
-    mosaicPosition: {x: 2152, y: 795}
     flatten: 0
     isImported: 1
     isVisible: 1
