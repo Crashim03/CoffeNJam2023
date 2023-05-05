@@ -27,6 +27,8 @@ public class Manager : MonoBehaviour
         {
             menus[i].GetComponent<OutfitChanger>().Initialize();
         }
+
+        RandomButton();
     }
 
     public void SaveButton() {
