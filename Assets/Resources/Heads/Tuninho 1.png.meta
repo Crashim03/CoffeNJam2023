@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5bb593d5ebdd2b94fb86b58356c35040
+guid: 5024d36a55e4c354088f20b63c358fc0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -109,9 +109,9 @@ TextureImporter:
     bones:
     - name: bone_1
       guid: 44c799ade32c7a14894c1d1a25ba2506
-      position: {x: 214.28734, y: 20.055271, z: 0}
-      rotation: {x: 0, y: 0, z: 0.76425105, w: 0.6449189}
-      length: 344.4866
+      position: {x: 207.65318, y: 39.957752, z: 0}
+      rotation: {x: 0, y: 0, z: 0.76106304, w: 0.64867795}
+      length: 323.76788
       parentId: -1
       color:
         serializedVersion: 2
