@@ -22,6 +22,7 @@ public static class Global
     public static SaveData saveData;
     public static bool isInitialized = false;
     public static Outfit currentOutfit = null;
+    public static int EasterEggInt;
 
     public static void Initialize()
     {
@@ -37,7 +38,11 @@ public static class Global
 
         for (int i = 0; i < resources.heads.Length; i++) {
             allBodyParts.Add(new BodyPart(resources.heads[i], Type.Head, partCounter++));
-        }
+            if (allBodyParts[i].sprite.name == "Tuninho") {
+                allBodyParts[i].isUnlocked = false;
+                EasterEggInt = i;
+            }
+         }
 
         for (int i = 0; i < resources.rightArms.Length; i++) {
             allBodyParts.Add(new BodyPart(resources.rightArms[i], Type.RightArm, partCounter++));
@@ -122,6 +127,10 @@ public static class Global
 
     public static int CreateOutfit(List<BodyPart> bodyParts, string name)
     {
+        if (name == "Tuninho") {
+            allBodyParts[EasterEggInt].isUnlocked = true;
+        }
+        
         Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
         outfit.outfitName = name;
         outfit.date = System.DateTime.Now.ToString();
