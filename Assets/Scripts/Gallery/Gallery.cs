@@ -6,6 +6,7 @@ public class Gallery : MonoBehaviour
 {
     public void Reset() {
         Global.Reset();
+        this.GetComponent<PopulateGrid>().Initialize();
     }
 
     public void Return() {

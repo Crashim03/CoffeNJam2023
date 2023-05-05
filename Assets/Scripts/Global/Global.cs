@@ -15,9 +15,9 @@ public enum Type {
 public static class Global
 {
     public static string path = Application.persistentDataPath + "/save.dat";
-    public static List<Outfit> specialOutfits = new List<Outfit>();
-    public static List<Outfit> allOutfits = new List<Outfit>();
-    public static List<BodyPart> allBodyParts = new List<BodyPart>();
+    public static List<Outfit> specialOutfits;
+    public static List<Outfit> allOutfits;
+    public static List<BodyPart> allBodyParts;
     public static LoadResources resources;
     public static SaveData saveData;
     public static bool isInitialized = false;
@@ -26,6 +26,9 @@ public static class Global
     public static void Initialize()
     {
         if (isInitialized) return;
+        specialOutfits = new List<Outfit>();
+        allOutfits = new List<Outfit>();
+        allBodyParts = new List<BodyPart>();
         isInitialized = true;
         GameObject gameObject = new GameObject("LoadResources");
         resources = gameObject.AddComponent<LoadResources>();
@@ -113,6 +116,7 @@ public static class Global
 
     public static void Reset() {
         File.Delete(path);
+        isInitialized = false;
         Initialize();
     }
 

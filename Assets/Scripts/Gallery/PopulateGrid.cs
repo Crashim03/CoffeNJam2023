@@ -9,6 +9,12 @@ public class PopulateGrid : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Initialize();
+    }
+
+    public void Initialize(){
+        Debug.Log(Global.allOutfits);
+        Depopulate();
         Populate();
     }
 
@@ -22,6 +28,12 @@ public class PopulateGrid : MonoBehaviour
             Debug.Log(Global.allOutfits[i].outfitName);
             newObj.GetComponent<Preview>().changeName(Global.allOutfits[i].outfitName);
         }
+    }
+
+    void Depopulate()
+    {
+        foreach(Transform child in this.transform)
+            Destroy(child.gameObject);
     }
 
 }
