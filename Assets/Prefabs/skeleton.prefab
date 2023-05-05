@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5076568495902286105}
+  - component: {fileID: 3682569984928216489}
   - component: {fileID: 5529319416760967694}
   - component: {fileID: 2259998005998330861}
   m_Layer: 0
@@ -18,7 +18,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5076568495902286105
+--- !u!4 &3682569984928216489
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7723751512676054936}
+  - component: {fileID: 732124618432884647}
   - component: {fileID: 3150523796662031355}
   - component: {fileID: 366323767494789963}
   m_Layer: 0
@@ -283,7 +283,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7723751512676054936
+--- !u!4 &732124618432884647
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -380,7 +380,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5970002949345404912}
+  - component: {fileID: 8570881736453847734}
   - component: {fileID: 6044296439412877593}
   - component: {fileID: 8298536802554036531}
   m_Layer: 0
@@ -390,7 +390,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5970002949345404912
+--- !u!4 &8570881736453847734
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -446,7 +446,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: -8742012655626985458, guid: edff893b7f575ee4aa42b6cbcdbc545a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71f7f95cb747bc24c85b92b6bfc85735, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -473,10 +473,9 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 6611542104876223759}
   - {fileID: 1712509775208328851}
-  - {fileID: 4219633199892291197}
   m_Bounds:
-    m_Center: {x: -0.0004273057, y: 0.0009384155, z: 0}
-    m_Extent: {x: 0.9807327, y: 1.6226985, z: 0}
+    m_Center: {x: -0.0004273057, y: 0.0009382963, z: 0}
+    m_Extent: {x: 0.9807327, y: 1.6226984, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -585,7 +584,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8843170015687689092}
+  - component: {fileID: 5220669914380790430}
   - component: {fileID: 4060926376300128162}
   - component: {fileID: 3920924815941039730}
   m_Layer: 0
@@ -595,7 +594,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8843170015687689092
+--- !u!4 &5220669914380790430
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -712,12 +711,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5076568495902286105}
-  - {fileID: 5970002949345404912}
-  - {fileID: 7723751512676054936}
-  - {fileID: 1786439980197322995}
-  - {fileID: 8843170015687689092}
-  - {fileID: 1285483741283225224}
+  - {fileID: 3682569984928216489}
+  - {fileID: 8570881736453847734}
+  - {fileID: 732124618432884647}
+  - {fileID: 6671692914489507637}
+  - {fileID: 5220669914380790430}
+  - {fileID: 1200311035641299760}
   - {fileID: 6611542104876223759}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -780,7 +779,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1786439980197322995}
+  - component: {fileID: 6671692914489507637}
   - component: {fileID: 8666908002218581617}
   - component: {fileID: 7534742360864705944}
   m_Layer: 0
@@ -790,7 +789,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1786439980197322995
+--- !u!4 &6671692914489507637
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -887,7 +886,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1285483741283225224}
+  - component: {fileID: 1200311035641299760}
   - component: {fileID: 8755413946910726400}
   - component: {fileID: 1281547327495305854}
   m_Layer: 0
@@ -897,7 +896,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1285483741283225224
+--- !u!4 &1200311035641299760
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
