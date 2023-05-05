@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 
 public class Manager : MonoBehaviour
 {
 
     public List<GameObject> menus;
+    public GameObject outfitName;
 
     private void Start() 
     {
@@ -41,7 +43,7 @@ public class Manager : MonoBehaviour
         {
             bps.Add(menus[i].GetComponent<OutfitChanger>().currentPart);
         }
-        int id = Global.CreateOutfit(bps, "BananaMan");
+        int id = Global.CreateOutfit(bps, outfitName.GetComponent<TMP_InputField>().text);
         Global.Save();
         Global.LoadOutfit(id);
     }
