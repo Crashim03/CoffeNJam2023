@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Preview : MonoBehaviour
 {
@@ -17,7 +18,8 @@ public class Preview : MonoBehaviour
     {
         for (int i = 0; i < menus.Count; i++)
         {
-            menus[i].GetComponent<SpriteRenderer>().sprite = bps[i].sprite;
+            menus[i].GetComponent<Image>().sprite = bps[i].sprite;
+            menus[i].GetComponent<Image>().SetNativeSize();
         }
     }
 }
