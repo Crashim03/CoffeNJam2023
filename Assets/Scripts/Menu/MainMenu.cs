@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
         Global.Initialize();
     }
     public void Start() {
-        if (Global.currentOutfit == null) {
+        if (Global.allOutfits.Count == 0) {
             button.GetComponent<UnityEngine.UI.Button>().interactable = false;
         }
     }

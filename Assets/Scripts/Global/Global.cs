@@ -65,6 +65,8 @@ public static class Global
         }
 
         createSpecialOutfits();
+        Load();
+        if (allOutfits.Count != 0) currentOutfit = allOutfits[0];
     }
 
     public static void createSpecialOutfits() {
@@ -109,7 +111,7 @@ public static class Global
 
         for (int i = 0; i < saveData.outfits.Length; i++) {
             Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
-            outfit.name = saveData.outfits[i].outfitName;
+            outfit.outfitName = saveData.outfits[i].outfitName;
             outfit.date = saveData.outfits[i].date;
             outfit.id = saveData.outfits[i].id;
             for (int j = 0; j < saveData.outfits[i].bodyParts.Count; j++)
@@ -129,8 +131,9 @@ public static class Global
     {
         if (name == "Tuninho") {
             allBodyParts[EasterEggInt].isUnlocked = true;
+            Global.Save();
         }
-        
+
         Outfit outfit = ScriptableObject.CreateInstance<Outfit>();
         outfit.outfitName = name;
         outfit.date = System.DateTime.Now.ToString();
