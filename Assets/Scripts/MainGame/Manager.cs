@@ -58,6 +58,6 @@ public class Manager : MonoBehaviour
     }
 
     public void ReturnButton() {
-        SceneManager.LoadScene("Gallery");
+        SceneManager.LoadScene("MainMenu");
     }
 }
