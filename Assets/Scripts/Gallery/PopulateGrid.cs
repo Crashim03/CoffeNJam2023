@@ -21,8 +21,7 @@ public class PopulateGrid : MonoBehaviour
     void Populate()
     {
         GameObject newObj;
-
-        for (int i = 0; i < Global.allOutfits.Count; i++)
+        for (int i = Global.allOutfits.Count - 1; i >= 0; i--)
         {
             newObj = (GameObject)Instantiate(prefab, transform);
             Debug.Log(Global.allOutfits[i].outfitName);
