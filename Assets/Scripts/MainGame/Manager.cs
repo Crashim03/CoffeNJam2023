@@ -46,6 +46,7 @@ public class Manager : MonoBehaviour
         int id = Global.CreateOutfit(bps, outfitName.GetComponent<TMP_InputField>().text);
         Global.Save();
         Global.LoadOutfit(id);
+        SceneManager.LoadScene(2);
     }
 
     public void ResetButton() {

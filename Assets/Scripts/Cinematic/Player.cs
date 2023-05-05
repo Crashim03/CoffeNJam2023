@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public List<GameObject> menus= new List<GameObject>();
+    public List<GameObject> menus = new List<GameObject>();
     
     private void Awake() {
         for (int i = 0; i < menus.Count; i++)
