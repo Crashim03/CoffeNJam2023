@@ -28,6 +28,7 @@ public class PopulateGrid : MonoBehaviour
             Debug.Log(Global.allOutfits[i].outfitName);
             newObj.GetComponent<Preview>().changeName(Global.allOutfits[i].outfitName);
             newObj.GetComponent<Preview>().changeOutfit(Global.allOutfits[i].bodyParts);
+            newObj.GetComponent<Preview>().outfit = Global.allOutfits[i];
         }
     }
 
