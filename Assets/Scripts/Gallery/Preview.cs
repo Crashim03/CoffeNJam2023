@@ -8,6 +8,7 @@ public class Preview : MonoBehaviour
 {
     [SerializeField] private TMP_Text tmp;
     public List<GameObject> menus = new List<GameObject>();
+    public Outfit outfit;
 
     public void changeName(string name)
     {
@@ -21,5 +22,10 @@ public class Preview : MonoBehaviour
             menus[i].GetComponent<Image>().sprite = bps[i].sprite;
             menus[i].GetComponent<Image>().SetNativeSize();
         }
+    }
+
+    public void SkeletonPreview() {
+        Global.currentOutfit = outfit;
+        Debug.Log("Button");
     }
 }

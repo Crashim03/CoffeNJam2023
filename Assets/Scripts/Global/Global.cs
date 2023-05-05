@@ -21,7 +21,7 @@ public static class Global
     public static LoadResources resources;
     public static SaveData saveData;
     public static bool isInitialized = false;
-    public static Outfit currentOutfit;
+    public static Outfit currentOutfit = null;
 
     public static void Initialize()
     {
